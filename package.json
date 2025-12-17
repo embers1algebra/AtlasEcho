@@ -1,0 +1,42 @@
+{
+  "name": "atlas-echo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "AtlasEcho – lightweight TypeScript/Vite project with Coinbase ecosystem integrations.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@coinbase/onchainkit": "^1.1.0",
+    "@coinbase/wallet-sdk": "^4.3.7",
+    "@coinbase/x402": "^2.0.0",
+    "@coinbase/cdp-sdk": "^1.1.1",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  },
+  "dependencyDescriptions": {
+    "@coinbase/onchainkit": {
+      "repo": "coinbase/onchainkit",
+      "why": "Набор утилит и UI-хелперов для ончейн-приложений в экосистеме Base."
+    },
+    "@coinbase/wallet-sdk": {
+      "repo": "coinbase/wallet-sdk",
+      "why": "Интеграция Coinbase Wallet и управление подключением кошелька."
+    },
+    "@coinbase/x402": {
+      "repo": "coinbase/x402",
+      "why": "Поддержка x402 payment flow для HTTP-native платёжных сценариев."
+    },
+    "@coinbase/cdp-sdk": {
+      "repo": "coinbase/cdp-sdk",
+      "why": "Доступ к сервисам Coinbase Developer Platform (ключи, проекты, метаданные)."
+    }
+  }
+}
